@@ -1,0 +1,13 @@
+nav.navbar.navbar-default(ng-controller='NavCtrl')
+    .navbar-header
+      button.navbar-toggle.collapsed(data-toggle="collapse", data-target="#navbar")
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href='/') 
+    #navbar.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        li: a(ui-sref='home'): i.fa.fa.fa-home &nbsp; Home
+        li: a(ui-sref='about'): i.fa.fa.fa-info &nbsp; About
+        li: a(ui-sref='blog'): i.fa.fa.fa-comments &nbsp; Blog
